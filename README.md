@@ -20,35 +20,35 @@ Elle utilise l'API [REST Countries](https://restcountries.com/) pour récupérer
 ## Structure du projet
 
 country-app/
-├─ public/
-│ └─ index.html
-├─ src/
-│ ├─ App.js
-│ ├─ index.js
-│ ├─ assets/
-│ │ ├─ fonts/
-│ │ └─ img/
-│ ├─ components/
-│ │ ├─ Card.js
-│ │ ├─ Countries.js
-│ │ ├─ Logo.js
-│ │ └─ Navigation.js
-│ ├─ pages/
-│ │ ├─ Home.js
-│ │ └─ About.js
-│ └─ styles/
-│ ├─ components/
-│ │ ├─ card.scss
-│ │ ├─ countries.scss
-│ │ ├─ logo.scss
-│ │ └─ navigation.scss
-│ ├─ settings.scss
-│ └─ index.scss
+  public/
+    index.html
+  src/
+    App.js
+    index.js
+    assets/
+      fonts/
+      img/
+    components/
+      Card.js
+      Countries.js
+      Logo.js
+      Navigation.js
+    pages/
+      Home.js
+      About.js
+    styles/
+      components/
+        card.scss
+        countries.scss
+        logo.scss
+        navigation.scss
+      settings.scss
+      index.scss
 
 ## Installation et lancement
 
 ```bash
-git clone <URL_DU_REPO>
+git clone <https://github.com/ElysaG/country-app-react.git>
 npm install
 npm start
 ```
@@ -62,4 +62,4 @@ A propos
 Projet réalisé dans le cadre de ma reconversion en développement web.
 Objectif : pratiquer React, la consommation d'API et la gestion d'état.
 
-Note pour le recruteur / visiteur : ce projet montre ma capacité à créer une application React complète avec composants réutilisables, state management, routing et consommation d'une API externe.
+Nota : ce projet montre ma capacité à créer une application React complète avec composants réutilisables, state management, routing et consommation d'une API externe.
