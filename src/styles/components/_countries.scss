@@ -1,5 +1,6 @@
 .countries {
   text-align: center;
+   margin: 10px 50px;
 
   .radio-container {
     justify-content: space-around;
@@ -19,7 +20,21 @@
       margin-left: 10px;
       cursor: pointer;
     }
+
+    // --- Media queries directement dans le bloc ---
+  @media (max-width: 680px) {
+    grid-template-columns: repeat(3, 1fr);
   }
+
+  @media (max-width: 560px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr; // tout empilé
+  }
+  }
+  // Inputs texte
   input[type="text"] {
     padding: 10px;
     border-radius: 40px;
@@ -36,8 +51,11 @@
       border-radius: 4px;
       color: $white;
     }
+      @media (max-width: 480px) {
+    width: 100%;
   }
-
+  }
+//Button
   button {
     margin: 0 auto 20px;
     background: none;
@@ -56,5 +74,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap:10px;
+  }
+}
+@media (max-width: 680px) {
+  .radio-container {
+    display: grid;
+    grid-template-rows: auto repeat(2, auto); // 1 ligne pour range, 2 lignes pour radios
+    grid-template-columns: repeat(3, 1fr); // 3 colonnes pour les radios
+    gap: 10px; // espace entre les éléments
+    align-items: center;
+
+    input[type="range"] {
+      grid-column: 1 / -1; // range prend toute la ligne
+      width: 100%;
+      order: 0; // au-dessus
+    }
+
+    input[type="radio"],
+    label {
+      grid-column: auto; // les radios et labels se placent automatiquement
+      margin-left: 0;
+    }
   }
 }

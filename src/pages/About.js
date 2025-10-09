@@ -5,7 +5,7 @@ import Logo from '../components/Logo';
 // Page "À propos" avec texte factice (Lorem Ipsum) pour exemple
 const About = () => {
     return (
-        <div>
+        <div className='about'>
             <Logo/>
             <Navigation/>
             <h1>A propos</h1>
