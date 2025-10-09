@@ -1,6 +1,6 @@
-# Country App
+# Countries App
 
-Country App est une application React qui permet de découvrir les pays du monde avec leurs drapeaux, capitales et populations.  
+Countries App est une application React qui permet de découvrir les pays du monde avec leurs drapeaux, capitales et populations.  
 Elle utilise l'API [REST Countries](https://restcountries.com/) pour récupérer les données en temps réel.
 
 ## Fonctionnalités
@@ -19,36 +19,36 @@ Elle utilise l'API [REST Countries](https://restcountries.com/) pour récupérer
 
 ## Structure du projet
 
-country-app/
-  public/
-    index.html
-  src/
-    App.js
-    index.js
-    assets/
-      fonts/
-      img/
-    components/
-      Card.js
-      Countries.js
-      Logo.js
-      Navigation.js
-    pages/
-      Home.js
-      About.js
-    styles/
-      components/
-        card.scss
-        countries.scss
-        logo.scss
-        navigation.scss
-      settings.scss
-      index.scss
+countries-app/
+public/
+index.html
+src/
+App.js
+index.js
+assets/
+fonts/
+img/
+components/
+Card.js
+Countries.js
+Logo.js
+Navigation.js
+pages/
+Home.js
+About.js
+styles/
+components/
+card.scss
+countries.scss
+logo.scss
+navigation.scss
+settings.scss
+index.scss
 
 ## Installation et lancement
 
 ```bash
-git clone <https://github.com/ElysaG/country-app-react.git>
+git clone https://github.com/ElysaG/CountriesApp.git
 npm install
 npm start
 ```
@@ -59,7 +59,8 @@ L'application sera accessible sur http://localhost:3000.
 
 A propos
 
-Projet réalisé dans le cadre de ma reconversion en développement web.
-Objectif : pratiquer React, la consommation d'API et la gestion d'état.
+Projet réalisé dans le cadre de ma reconversion en développement web, en phase d’auto-apprentissage avant la formation diplômante Concepteur Développeur d’Applications.
 
-Nota : ce projet montre ma capacité à créer une application React complète avec composants réutilisables, state management, routing et consommation d'une API externe.
+**Objectif :** pratiquer React, la consommation d'API et la gestion d'état.
+
+**Nota :** ce projet montre ma capacité à créer une application React complète avec composants réutilisables, state management, routing et consommation d'une API externe.
