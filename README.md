@@ -80,7 +80,7 @@ Ce projet a été réalisé avant ma formation diplômante Concepteur Développe
 - Architecture front propre et lisible
 - Maîtrise du SCSS, variables et structuration CSS
 
-##Améliorations possibles
+## Améliorations possibles
 
 - Ajout d’une barre de recherche par nom de pays
 - Tri par population, alphabétique, ou région
