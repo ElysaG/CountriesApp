@@ -3,6 +3,8 @@
 Countries App est une application React qui permet de découvrir les pays du monde avec leurs drapeaux, capitales et populations.  
 Elle utilise l'API [REST Countries](https://restcountries.com/) pour récupérer les données en temps réel.
 
+**Projet réalisé AVANT ma formation à La Capsule dans le cadre de mon auto-apprentissage du développement web (React, SCSS, consommation d’API, routing).**
+
 ## Fonctionnalités
 
 - Affichage d'une liste de pays avec drapeau, nom, capitale et population
@@ -14,37 +16,39 @@ Elle utilise l'API [REST Countries](https://restcountries.com/) pour récupérer
 
 - React
 - React Router (routing Home / About)
-- Axios pour récupérer les données de l'API
-- SCSS pour le style
+- SCSS (architecture de styles, variables, modules)
+- Fetch API / Axios pour récupérer les données
+- REST Countries API
 
 ## Structure du projet
-
-countries-app/
-public/
-index.html
-src/
-App.js
-index.js
-assets/
-fonts/
-img/
-components/
-Card.js
-Countries.js
-Logo.js
-Navigation.js
-pages/
-Home.js
-About.js
-styles/
-components/
-card.scss
-countries.scss
-logo.scss
-navigation.scss
-settings.scss
-index.scss
-
+```
+CountriesApp/
+├── public/
+│   ├── index.html
+│   └── ...
+└── src/
+    ├── App.js
+    ├── index.js
+    ├── assets/
+    │   ├── fonts/
+    │   └── img/
+    ├── components/
+    │   ├── Card.js
+    │   ├── Countries.js
+    │   ├── Logo.js
+    │   └── Navigation.js
+    ├── pages/
+    │   ├── Home.js
+    │   └── About.js
+    └── styles/
+        ├── components/
+        │   ├── card.scss
+        │   ├── countries.scss
+        │   ├── logo.scss
+        │   └── navigation.scss
+        ├── settings.scss
+        └── index.scss
+```
 ## Installation et lancement
 
 ```bash
@@ -57,10 +61,30 @@ L'application sera accessible sur http://localhost:3000.
 
 ---
 
-A propos
+## A propos
 
-Projet réalisé dans le cadre de ma reconversion en développement web, en phase d’auto-apprentissage avant la formation diplômante Concepteur Développeur d’Applications.
+Ce projet a été réalisé avant ma formation diplômante Concepteur Développeur d’Applications à La Capsule, dans une phase d’auto-apprentissage.
 
-**Objectif :** pratiquer React, la consommation d'API et la gestion d'état.
+### Objectifs personnels du projet :
+- Prendre en main React et sa logique de composants
+- Comprendre la gestion d’état (useState, useEffect)
+- Apprendre à faire des requêtes HTTP vers une API
+- Mettre en place un routing (navigation multi-pages)
+- Structurer une application avec plusieurs composants réutilisables
+- Utiliser SCSS pour un style plus structuré et maintenable
 
-**Nota :** ce projet montre ma capacité à créer une application React complète avec composants réutilisables, state management, routing et consommation d'une API externe.
+### Ce que montre ce projet :
+- Capacité à construire une application React complète
+- Consommation d’API publique
+- Mise en place d’un système de filtre dynamique
+- Architecture front propre et lisible
+- Maîtrise du SCSS, variables et structuration CSS
+
+##Améliorations possibles
+
+- Ajout d’une barre de recherche par nom de pays
+- Tri par population, alphabétique, ou région
+- Ajout d’une page de détails pour chaque pays
+- Refactorisation en TypeScript
+- Intégration d’un système de thème (clair / sombre)
+- Optimisation des perfs avec React.memo et lazy loading
